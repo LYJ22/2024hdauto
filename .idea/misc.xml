@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/jtest" />
     <file type="web" url="file://$PROJECT_DIR$/stest" />
+    <file type="web" url="file://$PROJECT_DIR$/stest2" />
     <file type="web" url="file://$PROJECT_DIR$/stestws" />
   </component>
   <component name="ProjectRootManager">

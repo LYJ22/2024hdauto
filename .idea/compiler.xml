@@ -11,5 +11,10 @@
         <module name="stest.test" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="stestws" target="17" />
+      <module name="stestws.main" target="17" />
+      <module name="stestws.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

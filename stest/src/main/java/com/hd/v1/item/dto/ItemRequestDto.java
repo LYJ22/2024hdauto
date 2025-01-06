@@ -1,6 +1,7 @@
 package com.hd.v1.item.dto;
 
 import com.hd.v1.item.entity.ItemEntity;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
@@ -11,9 +12,21 @@ import lombok.*;
 @Builder
 public class ItemRequestDto {
     Long id;
-    @NotEmpty(message = "Name cannot be empty")
+    @NotEmpty(message = "{validation.item.name}")
+    @Schema(
+            description = "Item name",
+            example = "pants1",
+            required = true,
+            type = "String"
+    )
     String name;
-    @Min(value=10, message = "10 이상이어야 함")
+    @Min(value=10, message = "{validation.item.price}")
+    @Schema(
+            description = "Item price",
+            example = "10000",
+            required = true,
+            type = "long"
+    )
     Long price;
 
     public ItemEntity toEntity() {
